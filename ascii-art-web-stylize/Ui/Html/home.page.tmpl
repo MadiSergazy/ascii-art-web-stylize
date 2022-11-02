@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang='en-KZ', >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+   <!-- <script src="app.js" defer></script>
+-->
+
+<title>Ascii-Art-Web</title>
+<style>
+.label, span{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+}
+body{
+overflow: auto;
+display: flex;
+place-items: center;
+
+background-color: rgb(167, 230, 109);
+flex-direction: column;
+}
+.container {
+
+display: flex;
+    position: relative;
+    top: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.text-area{
+      display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 2px;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+  border-color: teal;
+  background-color: cornflowerblue;
+  width: 500px;
+  padding: 3rem 1rem;
+  border-radius: .5rem;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons {
+display: flex;
+justify-content: space-around;
+margin: 5px;
+}
+
+.panel1 {
+width: 100%;
+max-width: 700px;
+max-height: 550px;
+overflow: auto;
+position: relative;
+    top: 50px;
+    border: 2px;
+    border-radius: 10p;
+    border-color: black;
+}
+.h1 {
+    padding-bottom: 400px;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 750px) {
+    .panel1 {
+        max-width: 550px;
+    }
+}
+@media screen and (max-width: 550px) {
+.container {
+top: 10px;
+}
+    .container, .text-area{
+        width: unset;
+    } 
+    .panel1 {
+    max-width: 250px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+   
+<div class="container">
+<div class="text-area">
+    <hr style="width: 95%;">
+
+<div class="label">ASCII-ART-WEB</div>
+<span class="tags">
+
+    <form action="/" method="POST">
+<span title="ENTER YOUR TEXT ON THIS LINE"> USER INPUT: TEXT</span>
+
+<textarea name="textForAscii" id="" cols="30" rows="10" placeholder="Enter Text"> </textarea>
+
+<div class="buttons">
+<select id="fileName" name="fileName" class="fileName"  >
+    <option name="fileName" value="standard">standard</option>
+    <option name="fileName" value="shadow">shadow</option>
+    <option name="fileName" value="thinkertoy">thinkertoy</option>
+</select>
+
+
+<input type="submit" value="Отправить" />
+</form>
+
+<!--<textarea name="" id="" cols="30" rows="10"></textarea> -->
+</div>
+</div class="data">
+<div class="panel1">
+    <pre class="output1">{{ . }}</pre>
+</div>
+<div style="height: 10px;">
+
+</div>
+</body>
+</html>
+
+
+<!--
+
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Домашняя страница - Snippetbox</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href='/'>Snippetbox</a></h1>
+        </header>
+        <nav>
+            <a href="/">Домашняя страница</a>
+        </nav>
+        <main>
+            <h2>Последние заметки</h2>
+            <p>Здесь пока ничего нет!</p>
+        </main>
+    </body>
+</html>
+-->
+
+
+
+
+
+
+
+
